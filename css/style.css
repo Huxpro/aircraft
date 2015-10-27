@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* global */
+@font-face {
+	font-family: 'huxico';
+	src:url('../fonts/huxico.eot');
+	src:url('../fonts/huxico.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/huxico.woff') format('woff'),
+		url('../fonts/huxico.ttf') format('truetype'),
+		url('../fonts/huxico.svg#huxico') format('svg');
+	font-weight: normal;
+	font-style: normal;
+} /* Made with http://icomoon.io/ */
+body{
+	font-family: "Hiragino Sans GB","Microsoft Yahei", "黑体",sans-serif;
+}
+button{
+	background: none;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 5px 20px;
+    cursor: pointer;
+    margin: 10px auto;
+}
+button:hover{
+    border: 1px solid black;
+}
+/* Stage */
+#stage{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 320px;
+	height: 568px;
+	max-height: 100%;
+	background: url(../img/background.png) no-repeat;
+	overflow: hidden;
+	position: relative;
+}
+#start{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+#start figure{
+	background: url(../img/start.png) no-repeat;
+	background-size: contain;
+	width: 95%;
+	height: 200px;
+	margin: 100px auto;
+}
+#start button{
+	width: 100px;
+	position: absolute;
+	left: 50%;
+	margin-left: -50px;
+	bottom: 100px;
+}
+#gameUI{
+	display: none;
+}
+#end{
+	display: none;
+	width: 75%;
+	margin: 180px auto;
+	height: auto;
+	text-align: center;
+	background-color: #d7ddde;
+	border: 1px gray solid;
+	border-radius: 5px;
+}
+#end p{
+    line-height: 35px;
+}
+#end .panel{
+	border-top: 1px gray solid;
+	border-bottom: 1px gray solid;
+	width: 100%;
+	height: 75px;
+	line-height: 80px;
+}
